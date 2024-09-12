@@ -4,7 +4,7 @@ import Foundation
 
 enum Const {
     
-    static let accessKey = "your_access_key"
+    static let accessKey = "XN0xoGBymTC6Ra33R_RXf2TbY0eDJCBhiBJNCQ4VTz4"
     static let baseEndpoint = "https://api.unsplash.com"
     static let searchPhotosPath = "/search/photos"
     static let getPhotoByIdPath = "/photos/"
@@ -28,6 +28,8 @@ enum Const {
     static let sortIcon = "arrow.up.arrow.down.circle"
     static let twoColumnsGridIcon = "square.grid.2x2"
     static let oneColumnGridIcon = "rectangle.grid.1x2"
+    static let shareIcon = "square.and.arrow.up"
+    static let saveIcon = "square.and.arrow.down"
     static let searchBarPlaceholder = "Search for inspiration..."
     static let imagePlaceholder = "photo"
     static let locationsKeyPath = "locations"
