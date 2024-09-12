@@ -4,6 +4,17 @@ import Foundation
 
 enum Const {
     
+    static let accessKey = "your_access_key"
+    static let baseEndpoint = "https://api.unsplash.com"
+    static let searchPhotosPath = "/search/photos"
+    static let getPhotoByIdPath = "/photos/"
+    
+    static let query = "query"
+    static let page = "page"
+    static let perPage = "per_page"
+    static let orderBy = "order_by"
+    static let clientId = "client_id"
+    
     static let firstPage = 1
     static let limitThirty = 30
     
