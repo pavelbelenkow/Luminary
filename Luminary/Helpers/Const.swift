@@ -35,6 +35,9 @@ enum Const {
     static let photoCollectionViewCellReuseIdentifier = "photoCell"
     static let photoCollectionViewFooterReuseIdentifier = "photoCellFooterView"
     static let searchHistoryCellReuseIdentifier = "searchHistoryCell"
+    static let tryAgainTitle = "Try Again"
+    static let loadingTitle = "Loading..."
+    static let emptyDataTitle = "No data available."
     
     static let recentSearchesStorageKey = "recentSearches"
     static let maxRecentSearches = 5
