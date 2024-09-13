@@ -58,7 +58,6 @@ final class StateView: UIView {
 private extension StateView {
     
     func setupAppearance() {
-        translatesAutoresizingMaskIntoConstraints = false
         setupMessageLabel()
         setupActionButton()
         setupActivityIndicator()

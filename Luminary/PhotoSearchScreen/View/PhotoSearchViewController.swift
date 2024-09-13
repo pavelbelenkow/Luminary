@@ -56,6 +56,7 @@ final class PhotoSearchViewController: UIViewController {
         view.retryAction = { [weak self] in
             self?.viewModel.searchPhotos()
         }
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
