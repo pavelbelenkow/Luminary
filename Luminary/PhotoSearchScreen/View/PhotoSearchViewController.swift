@@ -191,7 +191,7 @@ private extension PhotoSearchViewController {
         let currentLayout = photoSearchCollectionView.collectionViewLayout
         
         if currentLayout is UICollectionViewFlowLayout &&
-            (currentLayout as! UICollectionViewFlowLayout).itemSize.width == view.bounds.width
+            (currentLayout as! UICollectionViewFlowLayout).itemSize.width == (view.bounds.width - 32)
         {
             photoSearchCollectionView.setCollectionViewLayout(makeTwoColumnLayout(), animated: true)
             layoutSwitchButton.image = UIImage(systemName: Const.twoColumnsGridIcon)
