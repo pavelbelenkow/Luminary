@@ -8,9 +8,6 @@ final class PhotoCollectionViewCell: UICollectionViewCell {
         let view = UIImageView()
         view.tintColor = .black20
         view.contentMode = .scaleAspectFill
-        view.layer.cornerRadius = Const.collectionCellCornerRadius
-        view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        view.clipsToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -20,18 +17,14 @@ final class PhotoCollectionViewCell: UICollectionViewCell {
         label.configure(
             numberOfLines: 2,
             backgroundColor: .darkBlue,
-            cornerRadius: Const.collectionCellCornerRadius,
             textInsets: .small
         )
-        label.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private lazy var photoContainerView: UIView = {
         let view = UIView()
-        view.layer.cornerRadius = Const.collectionCellCornerRadius
-        view.layer.masksToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -62,6 +55,9 @@ final class PhotoCollectionViewCell: UICollectionViewCell {
 private extension PhotoCollectionViewCell {
     
     func setupAppearance() {
+        layer.cornerRadius = Const.collectionCellCornerRadius
+        layer.masksToBounds = true
+        
         setupPhotoContainerView()
         setupPhotoImageView()
         setupPhotoDescriptionLabel()
